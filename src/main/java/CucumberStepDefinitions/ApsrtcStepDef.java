@@ -108,7 +108,7 @@ public class ApsrtcStepDef{
     public void user_selects_a_seat_fills_in_all_the_details(DataTable data) throws Throwable {
         List<Map<String, String>> d= data.asMaps(String.class, String.class);
 
-        driver.findElement(By.id("Forward9")).click();
+        driver.findElement(By.id("Forward8")).click();
         driver.findElement(By.id("bookedByName")).sendKeys(d.get(0).get("Passenger name"));
         driver.findElement(By.id("mobileNo")).sendKeys(d.get(0).get("Mobile No"));
         driver.findElement(By.id("email")).sendKeys(d.get(0).get("Email Id"));
